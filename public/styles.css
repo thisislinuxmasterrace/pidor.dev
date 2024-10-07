@@ -4,10 +4,22 @@
     box-sizing: border-box;
 }
 
+#terminal {
+    color: darkgreen;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+    animation: glitch 5s infinite;
+}
+
+#terminal a {
+    color: darkgreen;
+}
+
 html, body {
     height: 100%;
     font-size: large;
 }
+
 
 @font-face {
     font-family: 'JetBrains Mono';
@@ -55,4 +67,13 @@ a.link {
     #logo {
         font-size: 7px;
     }
+}
+
+@keyframes glitch {
+    0% { text-shadow: 1px 0 red, -1px 0 blue; }
+    20% { text-shadow: -1px 0 red, 1px 0 blue; }
+    40% { text-shadow: 1px 0 red, -1px 0 blue; }
+    60% { text-shadow: -1px 0 red, 1px 0 blue; }
+    80% { text-shadow: 1px 0 red, -1px 0 blue; }
+    100% { text-shadow: -1px 0 red, 1px 0 blue; }
 }

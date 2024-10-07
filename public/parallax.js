@@ -1,4 +1,4 @@
-const logo = document.getElementById('logo');
+const logo = document.getElementById('terminal');
 
 document.addEventListener('mousemove', (event) => {
     const { clientX, clientY } = event;
