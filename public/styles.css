@@ -30,6 +30,7 @@ html, body {
 #logo {
     margin-top: 100px;
     margin-bottom: 50px;
+    transition: transform 0.05s; /* Smooth transition */
 }
 
 a.link {
